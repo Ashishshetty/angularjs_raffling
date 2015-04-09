@@ -1,0 +1,5 @@
+Entry.create!(name: "Ashish")
+Entry.create!(name: "Ashray")
+Entry.create!(name: "Akash")
+Entry.create!(name: "Aka")
+Entry.create!(name: "Chukku")
