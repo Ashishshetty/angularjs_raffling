@@ -11,13 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140702152650) do
+ActiveRecord::Schema.define(version: 20150409012316) do
 
-  create_table "entries", force: true do |t|
+  create_table "entries", force: :cascade do |t|
     t.string   "name"
     t.boolean  "winner"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

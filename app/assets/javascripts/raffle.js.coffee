@@ -1,7 +1,10 @@
 app = angular.module("Raffler", ["ngResource"])
 
-@RaffleCtrl = ($scope, $resource) ->
-  Entry = $resource("/entries/:id.json", {id: "@id"}, {update: {method: "PUT"}})
+app.factory "Entry", ["$resource", ($resource) ->
+  $resource("/entries/:id", {id: "@id"}, {update: {method: "PUT"}})
+]
+
+@RaffleCtrl = ["$scope", "Entry", ($scope, Entry) ->
   $scope.entries = Entry.query()
 
   $scope.addEntry = ->
@@ -16,5 +19,6 @@ app = angular.module("Raffler", ["ngResource"])
     if pool.length > 0
       entry = pool[Math.floor(Math.random()*pool.length)]
       entry.winner = true
-      Entry.update(entry)
+      entry.$update()
       $scope.lastWinner = entry
+]
