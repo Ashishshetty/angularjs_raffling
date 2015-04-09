@@ -86,3 +86,48 @@ Started GET "/entries.json" for 127.0.0.1 at 2015-04-09 11:47:34 +0530
 Processing by EntriesController#index as JSON
   [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries"
 Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-09 12:19:09 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RaffleController#index as HTML
+  Rendered raffle/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 93ms (Views: 83.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-09 12:19:10 +0530
+Processing by RaffleController#index as HTML
+  Rendered raffle/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/raffle.css?body=1" for 127.0.0.1 at 2015-04-09 12:19:10 +0530
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2015-04-09 12:19:10 +0530
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2015-04-09 12:19:10 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-09 12:19:10 +0530
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2015-04-09 12:19:10 +0530
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2015-04-09 12:19:10 +0530
+
+
+Started GET "/assets/raffle.js?body=1" for 127.0.0.1 at 2015-04-09 12:19:10 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-09 12:19:10 +0530
+
+
+Started GET "/entries.json" for 127.0.0.1 at 2015-04-09 12:19:10 +0530
+Processing by EntriesController#index as JSON
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries"
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 0.2ms)
